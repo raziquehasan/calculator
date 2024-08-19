@@ -1,2 +1,17 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Ensure HTML, CSS, and JavaScript files are treated as text files and normalize line endings
+*.html text
+*.css text
+*.js text
+
+# Specify custom diff settings if you want better syntax highlighting or diff handling for these file types
+*.html diff=html
+*.css diff=css
+*.js diff=javascript
+
+# Optionally, if you have specific merge strategies or custom merge drivers
+# Uncomment and configure the following lines if needed
+# *.html merge=your_custom_merge_driver
+# *.css merge=your_custom_merge_driver
+# *.js merge=your_custom_merge_driver
